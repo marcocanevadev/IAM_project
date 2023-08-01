@@ -5,6 +5,7 @@ In this project, we face the task of musical genre classification by analyzing t
 - Electronic music
 - Rap music
 - A set of my personal live recordings (Electronic)  
+
 To achieve genre classification, each class is divided into training and test sets, with three songs in each category used for training and the remaining three for testing.
 We employ feature extraction techniques such as Chromagrams and MFCCs (Mel Frequency Cepstral Coefficients) to characterize the audio content effectively.
 Subsequently, the training data is used to build k-Nearest Neighbors (kNN) models for classification, with three variations of kNN considered: Chroma-based kNN, MFCC-based kNN, and a model that combines both Chroma and MFCC features.
