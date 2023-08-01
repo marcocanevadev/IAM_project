@@ -1,4 +1,4 @@
-![image](https://github.com/marcocanevadev/IAM_project/assets/131400202/cd8a0824-20ea-4dd3-81e3-0f6e8c4e7357)# #IAM_project
+#IAM_project
 Final project for IAM class.
 ##Abstract:
 In this project, we face the task of musical genre classification by analyzing three sets of songs divided by genre and training models to accurately classify tracks based on their respective genres. The dataset consists of 18 songs, with six songs each from the following genres:
@@ -40,4 +40,4 @@ The results from the kNN models reveal that the Chromagram-based kNN achieves th
 The most recognized genres are "MySongs" using Chromagrams and "Electronic" using MFCCs. "MySongs" exhibit the highest recognition rate, which could be attributed to other categories including several artists, making correct classification more challenging.
 The Chromagram-trained kNN model is selected to test noisy and recovered data. As expected, the analysis of noisy data has a negative impact on performance, but the application of spectral subtraction manages to mitigate the loss by 2%.
 
- 
+![image](https://github.com/marcocanevadev/IAM_project/assets/131400202/cd8a0824-20ea-4dd3-81e3-0f6e8c4e7357)# 
