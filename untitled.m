@@ -1,8 +1,8 @@
 
 addpath(genpath(pwd))
-data = dir([pwd,'\data\analyzed','*.','mat' ]);
+data = dir([pwd,'\data\data_analyzed\','*.','mat' ]);
 
-for i = 3:length(data)
+for i = 5:length(data)
     
 
     load(data(i).name)
