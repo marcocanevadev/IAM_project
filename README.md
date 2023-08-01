@@ -42,9 +42,13 @@ The project comprises of 8 scripts and several functions, each contributing to t
 The 'funcs' directory contains the functions required for the project, except for those found in the Audio Analysis Library. Two functions, 'specsub.m' and 'sigmerge.m,' were copy-pasted due to their intricate development. Although 'recreate.m' is currently unused, it remains included.
 
 ## Results:
-After window length optimization, it was determined that a window length of 25ms provides the best results for the project.  
+After window length optimization, it was determined that a window length of 25ms provides the best results for the project.
+![image](/images/winlenopt.png)
 The results from the kNN models reveal that the Chromagram-based kNN achieves the highest performance at 46.9% accuracy with k = 250. MFCCs, on the other hand, perform slightly lower at 38.1% accuracy with k = 70. The ensemble model lies between the two, as an approximate average of their performance. These findings suggest that the addition of information (alltogether kNN) does not necessarily lead to an improvement in performance.  
+![image](/images/recrate25n.png)
+![image](/images/kNN1.png)
 While MFCCs perform relatively poorly, they still outperform random guessing (33.3%). The system should be able to learn when to utilize each set of information to maximize performance. However, kNN models, being simple, do not allow for much control and serve as a stepping stone for this type of analysis.  
-The most recognized genres are "MySongs" using Chromagrams and "Electronic" using MFCCs. "MySongs" exhibit the highest recognition rate, which could be attributed to other categories including several artists, making correct classification more challenging.  
+The most recognized genres are "MySongs" using Chromagrams and "Electronic" using MFCCs. "MySongs" exhibit the highest recognition rate, which could be attributed to other categories including several artists, making correct classification more challenging.
+![image](/images/recratecat.png)
 The Chromagram-trained kNN model is selected to test noisy and recovered data. As expected, the analysis of noisy data has a negative impact on performance, but the application of spectral subtraction manages to mitigate the loss by 2%.
-
+![image](/images/kNN2.png)
