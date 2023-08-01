@@ -52,5 +52,5 @@ The most recognized genres are "MySongs" using Chromagrams and "Electronic" usin
 "MySongs" has the highest recognition rate, which could be attributed to other categories including several artists, making correct classification more challenging.
 ![image](/images/recratecat25n.png)  
 The Chromagram-trained kNN model is selected to test noisy and recovered data.  
-As expected, the analysis of noisy data has a negative impact on performance, but the application of spectral subtraction manages to mitigate the loss by 0.47%.
+As expected, the analysis of noisy data has a negative impact on performance, but the application of spectral subtraction manages to mitigate the loss by approx. 10%.
 ![image](/images/kNN2.png)
