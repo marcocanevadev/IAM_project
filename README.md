@@ -25,7 +25,6 @@ In this project, we concentrate on frequency domain features, specifically MFCCs
 
 After extracting the features, we proceed with training kNN models using the three sets of features: MFCC-based kNN, Chroma-based kNN, and the combination of both Chroma and MFCC features. The model with the highest classification accuracy is selected for further evaluation.  
 To assess the models' robustness, we introduce noise to the test set with a Signal-to-Noise Ratio (SNR) of 5dB. We then use the chosen kNN model to classify the test set before and after the application of spectral subtraction, a technique used to reduce noise from audio signals.  
-Throughout this report, we will delve into the details of MFCCs and Chroma features, spectral subtraction, and kNN models to comprehensively understand the genre classification process and its performance under noisy conditions.
 
 ## Project:
 The project comprises of 8 scripts and several functions, each contributing to the process of musical genre classification.
