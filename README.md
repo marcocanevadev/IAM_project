@@ -49,7 +49,7 @@ The results from the kNN models reveal that the Chromagram-based kNN achieves th
 ![image](/images/kNN1.png)  
 While MFCCs perform relatively poorly, they still outperform random guessing (33.3%). The system should be able to learn when to utilize each set of information to maximize performance. However, kNN models, being simple, do not allow for much control and serve as a stepping stone for this type of analysis.  
 The most recognized genres are "MySongs" using Chromagrams and "Electronic" using MFCCs.  
-"MySongs" exhibit the highest recognition rate, which could be attributed to other categories including several artists, making correct classification more challenging.
+"MySongs" has the highest recognition rate, which could be attributed to other categories including several artists, making correct classification more challenging.
 ![image](/images/recratecat25n.png)  
 The Chromagram-trained kNN model is selected to test noisy and recovered data.  
 As expected, the analysis of noisy data has a negative impact on performance, but the application of spectral subtraction manages to mitigate the loss by 0.47%.
