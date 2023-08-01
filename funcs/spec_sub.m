@@ -1,1 +1,0 @@
-%perform spectral subtraction
