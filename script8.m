@@ -1,7 +1,7 @@
 %   ---- Plot confusion matrix ----
 
 %   ---- kNN 1, 2 and 3 ----
-figure(1)
+figure(3)
 sgtitle('kNN 1, 2 and 3')
 subplot(2, 2, 1)
 C1 = confusionmat(gr_1_flag, predicted_label_1);
@@ -27,7 +27,7 @@ title('Rates')
 ylim([0,65])
 %   ---- Best kNN on noisy and reconstructed ----
 
-figure(2)
+figure(4)
 sgtitle(['BEST kNN: Chroma (k = ', mat2str(k(b1)),')'])
 subplot(2,2,1)
 cm4 = confusionchart(C1, {'MySongs'  'Electronic' 'Rap'},'OffDiagonalColor', "#7E2F8E", 'Title', 'Clean','Normalization','column-normalized');

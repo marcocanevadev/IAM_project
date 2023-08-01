@@ -2,7 +2,7 @@
 % 
 k = [1, 3, 5, 10,40,70,110, 150, 250];
 
-figure(3)
+figure(1)
 plot(k,rate_1,'Color','red')
 hold on
 stem(k,rate_1,'--diamondr')
@@ -14,16 +14,28 @@ stem(k,rate_2,'--diamondg')
 plot(k,rate_3,'Color','blue')
 hold on
 stem(k,rate_3,'--diamondb')
-
+hold on
 xlabel('k')
 xticks(k)
 ylim([30,50])
+xlim([-10,280])
+
 ylabel('recognition rate')
 legend('chroma','','mfccs','','all')
-title('kNN recog rate comparison')
+title('Recog rate comparison')
+[max_1, i_1] = max(rate_1);
+[max_2, i_2] = max(rate_2);
+[max_3, i_3] = max(rate_3);
+
+text(k(i_1), max_1, num2str(max_1), 'VerticalAlignment', 'top', 'HorizontalAlignment', 'right');
+text(k(i_2), max_2, num2str(max_2), 'VerticalAlignment', 'top');
+text(k(i_3), max_3, num2str(max_3), 'VerticalAlignment', 'top');
 
 
-figure(4)
+
+
+
+figure(2)
 s = sum(score_1);
 score_1(1)= (score_1(1)*100)/s;
 score_1(2)= (score_1(2)*100)/s;
